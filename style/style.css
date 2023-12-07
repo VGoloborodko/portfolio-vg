@@ -1,0 +1,296 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a:active, a:focus {
+  outline: none;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input:active, textarea:active {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea {
+  resize: horizontal;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1600px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+@media (max-width: 1279px) {
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col {
+  flex: 1 0 0%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.col-1 {
+  flex: 0 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 8.3333333333%;
+}
+
+.col-2 {
+  flex: 0 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 16.6666666667%;
+}
+
+.col-3 {
+  flex: 0 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 25%;
+}
+
+.col-4 {
+  flex: 0 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 33.3333333333%;
+}
+
+.col-5 {
+  flex: 0 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 41.6666666667%;
+}
+
+.col-6 {
+  flex: 0 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 50%;
+}
+
+.col-7 {
+  flex: 0 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 58.3333333333%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 66.6666666667%;
+}
+
+.col-9 {
+  flex: 0 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 75%;
+}
+
+.col-10 {
+  flex: 0 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 83.3333333333%;
+}
+
+.col-11 {
+  flex: 0 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 91.6666666667%;
+}
+
+.col-12 {
+  flex: 0 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .col-md-1 {
+    flex: 0 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 16.6666666667%;
+  }
+  .col-md-2 {
+    flex: 0 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33.3333333333%;
+  }
+  .col-md-3 {
+    flex: 0 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 50%;
+  }
+  .col-md-4 {
+    flex: 0 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 66.6666666667%;
+  }
+  .col-md-5 {
+    flex: 0 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 83.3333333333%;
+  }
+  .col-md-6 {
+    flex: 0 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .col-sm-1 {
+    flex: 0 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 33.3333333333%;
+  }
+  .col-sm-2 {
+    flex: 0 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 66.6666666667%;
+  }
+  .col-sm-3 {
+    flex: 0 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 100%;
+  }
+}
+body {
+  background: rebeccapurple;
+}
+
+.row {
+  margin: 15px 0;
+}
+
+.block {
+  padding: 20px;
+  background: gainsboro;
+}
+
+h1 {
+  font-size: 40px;
+  background: rgb(51, 114, 153);
+  color: white;
+}
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 28px;
+    background: rgb(51, 153, 90);
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 18px;
+    background: rgb(153, 51, 134);
+  }
+}/*# sourceMappingURL=style.css.map */
