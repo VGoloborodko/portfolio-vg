@@ -5,11 +5,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Goloborodko</title>
 </head>
 
 <body>
-    
+    <div class="page">
+
+        <header class="header">
+            <div class="header__wrapper container">
+                <div class="col">
+                    <div class="header__block">
+                        <div class="header__logo font-t">Vitaly Goloborodko</div>
+                        <div class="header__menu">
+                            <a class="font-b" href="">ОБО МНЕ,</a>
+                            <a class="font-b" href="">СТЕК,</a>
+                            <a class="font-b" href="">ПРОЕКТЫ,</a>
+                            <a class="font-b" href="">КОНТАКТЫ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+
+            <section class="cover">
+                <div class="cover__wrapper container">
+                    <div class="cover__block">
+                        <div class="row">
+                            <div class="col">
+                                <h1 class="cover__title">GOLOBORODKO</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6 col-md-4">
+                                <p class="cover__description font-b">Фронтенд разработичк с широким спектром
+                                    навыков в области вёрстки и разработки
+                                    отзывчивых пользовательских интерфейсов.</p>
+                            </div>
+                            <div class="col-6 col-md-2">
+                                <p class="cover__scroll font-t">(Scroll)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project">
+                <div class="project__wrapper container">
+                    <div class="col">
+                        <h2 class="project__title font-t">Проекты</h2>
+                        <div class="swiper project__mySwiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <div class="cover__card">
+                                        <div class="project__image">
+                                            <img src="/image/yamaguchi.png" width="710" height="582" alt="Yamaguchi">
+                                        </div>
+                                        <p class="project__description font-s color--primary-text">Yamaguchi, <span
+                                                class="font-w-r">2021</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="cover__card">
+                                        <div class="project__image">
+                                            <img src="/image/rostelecom.png" width="710" height="582" alt="Yamaguchi">
+                                        </div>
+                                        <p class="project__description font-s color--primary-text">Ростелеком, <span
+                                                class="font-w-r">2023</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="cover__card">
+                                        <div class="project__image">
+                                            <img src="/image/yamaguchi.png" width="710" height="582" alt="Yamaguchi">
+                                        </div>
+                                        <p class="project__description font-s color--primary-text">VIbank, <span
+                                                class="font-w-r">2023</span></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/script.js"></script>
 </body>
 
 </html>

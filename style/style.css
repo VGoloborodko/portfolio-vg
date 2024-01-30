@@ -1,97 +1,5 @@
 @charset "UTF-8";
-/*Обнуление*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-  -webkit-tap-highlight-color: transparent;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-:focus, :active {
-  outline: none;
-}
-
-a:focus, a:active {
-  outline: none;
-}
-
-nav, footer, header, aside {
-  display: block;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-input, button, textarea {
-  font-family: inherit;
-}
-
-input::-ms-clear {
-  display: none;
-}
-
-button {
-  cursor: pointer;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-
-a, a:visited {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-ul li {
-  list-style: none;
-}
-
-img {
-  vertical-align: top;
-}
-
-a:active, a:focus {
-  outline: none;
-}
-
-input, textarea {
-  outline: none;
-}
-
-input:active, textarea:active {
-  outline: none;
-}
-
-:focus {
-  outline: none;
-}
-
-textarea {
-  resize: none;
-}
-
-textarea {
-  resize: vertical;
-}
-
-textarea {
-  resize: horizontal;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap");
 .container {
   margin: 0 auto;
   max-width: 1600px;
@@ -264,33 +172,282 @@ textarea {
     width: 100%;
   }
 }
-body {
-  background: rebeccapurple;
+html {
+  --brend-blue: #0000CD;
+  --brend-red: #A52A2A;
+  --primary-text: #3D3D3D;
+  --secondary-text: #828282;
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #F5F5F5;
+  --stroke: #828282;
 }
 
-.row {
-  margin: 15px 0;
+.color--brend-blue {
+  color: var(--brend-blue) !important;
 }
 
-.block {
-  padding: 20px;
-  background: gainsboro;
+.color--brend-red {
+  color: var(--brend-red) !important;
 }
 
-h1 {
-  font-size: 40px;
-  background: rgb(51, 114, 153);
-  color: white;
+.color--primary-text {
+  color: var(--primary-text) !important;
+}
+
+.color--secondary-text {
+  color: var(--secondary-text) !important;
+}
+
+.color--bg-primary {
+  color: var(--bg-primary) !important;
+}
+
+.color--bg-secondary {
+  color: var(--bg-secondary) !important;
+}
+
+.color--stroke {
+  color: var(--stroke);
+}
+
+.font-h1 {
+  font-family: "Raleway", sans-serif;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  color: var(--primary-text);
+}
+@media (max-width: 1599px) {
+  .font-h1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 1279px) {
+  .font-h1 {
+    font-size: 70px;
+  }
 }
 @media (max-width: 1024px) {
-  h1 {
-    font-size: 28px;
-    background: rgb(51, 153, 90);
+  .font-h1 {
+    font-size: 70px;
   }
 }
-@media (max-width: 767px) {
-  h1 {
-    font-size: 18px;
-    background: rgb(153, 51, 134);
+.font-h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--primary-text);
+}
+@media (max-width: 1279px) {
+  .font-h2 {
+    font-size: 50px;
   }
+}
+.font-t {
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--primary-text);
+}
+.font-s {
+  font-family: "Raleway", sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+  color: var(--secondary-text);
+}
+.font-b {
+  font-family: "Raleway", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+  color: var(--primary-text);
+}
+.font-w-r {
+  font-weight: 400;
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+a:active, a:focus {
+  outline: none;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input:active, textarea:active {
+  outline: none;
+}
+
+:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+textarea {
+  resize: horizontal;
+}
+
+.header {
+  height: 32.7114427861vh;
+  padding-bottom: 24.8756218905vh;
+}
+@media (max-width: 1024px) {
+  .header {
+    padding-bottom: 14.9253731343vh;
+  }
+}
+.header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 17px 0;
+}
+.header__menu {
+  display: flex;
+  -moz-column-gap: 48px;
+       column-gap: 48px;
+}
+
+.cover__block {
+  display: flex;
+  flex-direction: column;
+  row-gap: 31.0945273632vh;
+}
+.cover__title {
+  font-family: Raleway;
+  font-size: 184px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  text-align: center;
+  color: var(--primary-text, #3D3D3D);
+}
+@media (max-width: 1599px) {
+  .cover__title {
+    font-size: 11.1719vw;
+  }
+}
+@media (max-width: 1279px) {
+  .cover__title {
+    font-size: 11.7005vw;
+  }
+}
+@media (max-width: 1024px) {
+  .cover__title {
+    font-size: 12.10937vw;
+  }
+}
+.cover__scroll {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.project {
+  padding-top: 150px;
+}
+@media (max-width: 1024px) {
+  .project {
+    padding-top: 120px;
+  }
+}
+.project__title {
+  padding-bottom: 40px;
+}
+.project__mySwiper .swiper {
+  width: 100%;
+  height: 100%;
+}
+.project__mySwiper .swiper-button-next, .project__mySwiper .swiper-button-prev {
+  color: var(--bg-primary);
+}
+.project__image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.project__description {
+  padding-top: 16px;
 }/*# sourceMappingURL=style.css.map */

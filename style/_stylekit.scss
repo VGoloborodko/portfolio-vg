@@ -1,0 +1,145 @@
+//________________Цвета
+html {
+    // Фирменный цвет
+    --brend-blue: #0000CD;
+    --brend-red: #A52A2A;
+    // Шрифты
+    --primary-text: #3D3D3D;
+    --secondary-text: #828282;
+    // Фон
+    --bg-primary: #FFFFFF;
+    --bg-secondary: #F5F5F5;
+    // Элементы
+    --stroke: #828282;
+}
+
+//________________Цвета стили
+.color--brend-blue {
+    color: var(--brend-blue) !important;
+}
+
+.color--brend-red {
+    color: var(--brend-red) !important;
+}
+
+.color--primary-text {
+    color: var(--primary-text) !important;
+}
+
+.color--secondary-text {
+    color: var(--secondary-text) !important;
+}
+
+.color--bg-primary {
+    color: var(--bg-primary) !important;
+}
+
+.color--bg-secondary {
+    color: var(--bg-secondary) !important;
+}
+
+.color--stroke {
+    color: var(--stroke);
+}
+
+//________________Шрифты
+.font-h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    color: var(--primary-text);
+
+    @include bp(xl) {
+        font-size: 80px;
+    }
+
+    @include bp(lg) {
+        font-size: 70px;
+    }
+
+    @include bp(md) {
+        font-size: 70px;
+    }
+
+    @include bp(sm) {}
+
+}
+
+.font-h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    color: var(--primary-text);
+
+    @include bp(xl) {}
+
+    @include bp(lg) {
+        font-size: 50px;
+    }
+
+    @include bp(md) {}
+
+    @include bp(sm) {}
+}
+
+.font-t {
+    font-family: 'Raleway', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    color: var(--primary-text);
+
+    @include bp(xl) {}
+
+    @include bp(lg) {}
+
+    @include bp(md) {}
+
+    @include bp(sm) {}
+}
+
+.font-s {
+    font-family: 'Raleway', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    color: var(--secondary-text);
+
+    @include bp(xl) {}
+
+    @include bp(lg) {}
+
+    @include bp(md) {}
+
+    @include bp(sm) {}
+}
+
+.font-b {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 140%;
+    color: var(--primary-text);
+
+    @include bp(xl) {}
+
+    @include bp(lg) {}
+
+    @include bp(md) {}
+
+    @include bp(sm) {}
+}
+
+//________________Остальное
+
+// font-weight: regular;
+.font-w-r {
+    font-weight: 400;
+}

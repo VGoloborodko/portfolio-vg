@@ -1,34 +1,122 @@
-// Обнуление стилей
-@import "_clear-styles";
+// Шрифты
+
+// Шрифт Cygre - оказался проблемным, есть недочеты
+// @import "_fonts";
+
+// Шрифт Raleway
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap');
 
 // Сетка сайта
 @import "./grid/init";
+// Стили шрифтов
+@import "_stylekit";
+// Обнуление стилей
+@import "_clear-styles";
 
-body {
-    background: rebeccapurple;
-}
-
-.row {
-    margin: 15px 0;
-}
-
-.block {
-    padding: 20px;
-    background: gainsboro;
-}
-
-h1 {
-    font-size: 40px;
-    background: rgb(51, 114, 153);
-    color: white;
+.header {
+    height: calc(263 / 804 * 100vh);
+    padding-bottom: calc(200 / 804 * 100vh);
 
     @include bp(md) {
-        font-size: 28px;
-        background: rgb(51, 153, 90);
+        padding-bottom: calc(120 / 804 * 100vh);
     }
 
-    @include bp(sm) {
-        font-size: 18px;
-        background: rgb(153, 51, 134);
+    &__wrapper {}
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 17px 0;
+    }
+
+    &__logo {}
+
+    &__menu {
+        display: flex;
+        column-gap: 48px;
+    }
+}
+
+.cover {
+    // height: calc(541 / 804 * 100vh);
+
+    &__wrapper {}
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+        // row-gap: 250px;
+        row-gap: calc(250 / 804 * 100vh);
+    }
+
+    &__title {
+        font-family: Raleway;
+        font-size: 184px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: normal;
+        text-align: center;
+        color: var(--primary-text, #3D3D3D);
+
+        @include bp(xl) {
+            font-size: 11.1719vw;
+        }
+
+        @include bp(lg) {
+            font-size: 11.7005vw;
+        }
+
+        @include bp(md) {
+            font-size: 12.10937vw;
+        }
+    }
+
+    &__description {}
+
+    &__scroll {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        height: 100%;
+    }
+}
+
+.project {
+    padding-top: 150px;
+
+    @include bp(md) {
+        padding-top: 120px;
+    }
+
+    &__wrapper {}
+
+    &__title {
+        padding-bottom: 40px;
+    }
+
+    &__mySwiper {
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .swiper-slide {}
+
+        .swiper-button-next, .swiper-button-prev {
+            color: var(--bg-primary);
+        }
+    }
+
+    &__image {
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    }
+
+    &__description {
+        padding-top: 16px;
     }
 }

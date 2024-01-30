@@ -30,6 +30,14 @@
     width: (#{percentage($size / 12)});
 }
 
+// Доработка, реализован блок team-responds, страница о компании
+@mixin col-lg($size) {
+    flex: 0 0 auto;
+    padding-left: $grid-gap-side;
+    padding-right: $grid-gap-side;
+    width: (#{percentage($size / 12)});
+}
+
 @mixin col-md($size) {
     flex: 0 0 auto;
     padding-left: $grid-gap-side;
